@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Dancing Script", cursive;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #303030;
+}
+.card {
+	background-color: #151515;
+	width: 750px;
+	height: 420px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+	gap: 50px;
+}
+img {
+	width: 200px;
+	position: relative;
+	animation-name: image;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 0.8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+pre {
+	color: #f0f0f0;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+	position: relative;
+	animation-name: text;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 0.8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes text {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	25% {
+		left: -80px;
+		top: 0px;
+	}
+	50% {
+		left: -80px;
+		top: -80px;
+	}
+	75% {
+		left: 0px;
+		top: -80px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}
+@keyframes image {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	25% {
+		left: 80px;
+		top: 0px;
+	}
+	50% {
+		left: 80px;
+		top: 80px;
+	}
+	75% {
+		left: 0px;
+		top: 80px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}
