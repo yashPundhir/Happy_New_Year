@@ -90,3 +90,58 @@ pre {
 		top: 0px;
 	}
 }
+@media (width <=500px) {
+	.card {
+		height: 530px;
+		width: 320px;
+		flex-direction: column-reverse;
+		gap: 0px;
+	}
+	pre {
+		font-size: 30px;
+	}
+	@keyframes image {
+		0% {
+			left: 0px;
+			top: 0px;
+		}
+		25% {
+			left: 50px;
+			top: 0px;
+		}
+		50% {
+			left: 50px;
+			top: 80px;
+		}
+		75% {
+			left: 0px;
+			top: 80px;
+		}
+		100% {
+			left: 0px;
+			top: 0px;
+		}
+	}
+	@keyframes text {
+		0% {
+			left: 0px;
+			top: 0px;
+		}
+		25% {
+			left: -55px;
+			top: 0px;
+		}
+		50% {
+			left: -55px;
+			top: -80px;
+		}
+		75% {
+			left: 0px;
+			top: -80px;
+		}
+		100% {
+			left: 0px;
+			top: 0px;
+		}
+	}
+}
