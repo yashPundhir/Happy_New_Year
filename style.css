@@ -12,7 +12,14 @@
 	align-items: center;
 	background-color: #303030;
 }
+.card-outer {
+	padding: 10px;
+	border: 5px solid orangered;
+}
 .card {
+	border-style: solid;
+	border-width: 5px;
+	border-color: red;
 	background-color: #151515;
 	width: 750px;
 	height: 420px;
@@ -21,7 +28,13 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: row-reverse;
-	gap: 50px;
+	gap: 0px;
+	animation-name: border;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 0.8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 img {
 	width: 200px;
@@ -34,6 +47,7 @@ img {
 	animation-direction: alternate;
 }
 pre {
+	width: 300px;
 	color: #f0f0f0;
 	text-align: center;
 	font-size: 40px;
@@ -48,24 +62,46 @@ pre {
 }
 @keyframes text {
 	0% {
+		color: #f0f0f0;
 		left: 0px;
 		top: 0px;
 	}
 	25% {
+		color: red;
 		left: -80px;
 		top: 0px;
 	}
 	50% {
+		color: yellow;
 		left: -80px;
 		top: -80px;
 	}
 	75% {
+		color: green;
 		left: 0px;
 		top: -80px;
 	}
 	100% {
+		color: cyan;
 		left: 0px;
 		top: 0px;
+	}
+}
+@keyframes border {
+	0% {
+		border-color: #f0f0f0;
+	}
+	25% {
+		border-color: red;
+	}
+	50% {
+		border-color: yellow;
+	}
+	75% {
+		border-color: green;
+	}
+	100% {
+		border-color: cyan;
 	}
 }
 @keyframes image {
@@ -106,11 +142,11 @@ pre {
 			top: 0px;
 		}
 		25% {
-			left: 50px;
+			left: 45px;
 			top: 0px;
 		}
 		50% {
-			left: 50px;
+			left: 45px;
 			top: 80px;
 		}
 		75% {
@@ -124,22 +160,27 @@ pre {
 	}
 	@keyframes text {
 		0% {
+			color: #f0f0f0;
 			left: 0px;
 			top: 0px;
 		}
 		25% {
-			left: -55px;
+			color: red;
+			left: -50px;
 			top: 0px;
 		}
 		50% {
-			left: -55px;
+			color: yellow;
+			left: -50px;
 			top: -80px;
 		}
 		75% {
+			color: green;
 			left: 0px;
 			top: -80px;
 		}
 		100% {
+			color: cyan;
 			left: 0px;
 			top: 0px;
 		}
